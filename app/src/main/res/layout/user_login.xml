@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        app:layout_heightPercent="100%"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/body"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="BlueLippie"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/header"
+            android:id="@+id/tv_appName"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textSize="20sp"
+                android:id="@+id/et_username"
+                android:maxLines="1"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:textSize="20sp"
+                android:id="@+id/et_password"
+                android:maxLines="1"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Log In"
+                android:textSize="20sp"
+                android:background="#ffffff"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>
